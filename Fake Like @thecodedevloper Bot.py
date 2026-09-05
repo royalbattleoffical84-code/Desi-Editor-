@@ -7,15 +7,15 @@ import time
 from datetime import datetime, timedelta, timezone
 
 # --------------------- BOT CONFIG ---------------------
-API_TOKEN = '8897085401:AAFlXYw5NMd2xBtgC8R1XCDZxboQ3MLsfMM'
+API_TOKEN = '8817197984:AAHsZ4e5KVh61_jkNwV06iSQ5C9On5pfRqE'
 bot = telebot.TeleBot(API_TOKEN)
 
-OWNER_ID = 8xxxxxxxx3
-CHANNELS_TO_CHECK = ['@thecodedevloper]
+OWNER_ID = 8791434580
+CHANNELS_TO_CHECK = ['@shivamXofficalpage']
 
 CHANNEL_BUTTONS = [
-    ("Join Update Channel", "https://t.me/codelibrarychannel"),
-    ("Join Support Group", "https://t.me/htmlcodelibrary")
+    ("Join Update Channel", "https://t.me/shivamXofficalpage"),
+    ("Join Support Group", "https://t.me/ClashX73")
 ]
 
 DATA_FILE = 'bot-data.json'
