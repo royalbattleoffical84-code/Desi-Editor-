@@ -7,15 +7,15 @@ import time
 from datetime import datetime, timedelta, timezone
 
 # --------------------- BOT CONFIG ---------------------
-API_TOKEN = os.environ.get('BOT_TOKEN', 'YOUR_BOT_TOKEN_HERE')
+API_TOKEN = os.environ.get('BOT_TOKEN', '8817197984:AAHsZ4e5KVh61_jkNwV06iSQ5C9On5pfRqE')
 bot = telebot.TeleBot(API_TOKEN)
 
-OWNER_ID = int(os.environ.get('OWNER_ID', '0'))
-CHANNELS_TO_CHECK = ['@thecodedevloper']
+OWNER_ID = int(os.environ.get('OWNER_ID', '8791434580'))
+CHANNELS_TO_CHECK = ['@shivamXofficalpage']
 
 CHANNEL_BUTTONS = [
-    ("Join Update Channel", "https://t.me/codelibrarychannel"),
-    ("Join Support Group", "https://t.me/htmlcodelibrary")
+    ("Join Update Channel", "https://t.me/shivamXofficalpage"),
+    ("Join Support Group", "https://t.me/ClashX73")
 ]
 
 DATA_FILE = 'bot-data.json'
@@ -251,7 +251,7 @@ def handle_like(message):
 
     args = message.text.split()
     if len(args) < 3:
-        bot.reply_to(message, "❌ Usᴀɢᴇ: `/like {region} {uid}`\nExᴀᴍᴘʟᴇ: `/like bd 10832316022`", parse_mode='Markdown')
+        bot.reply_to(message, "❌ Usᴀɢᴇ: `/like {region} {uid}`\nExᴀᴍᴘʟᴇ: `/like ind 10832316022`", parse_mode='Markdown')
         return
 
     region = args[1].lower()
