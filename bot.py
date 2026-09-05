@@ -195,9 +195,9 @@ def handle_menu_buttons(message):
             daily_bonus[str_user_id] = today
             if str_user_id not in referrals:
                 referrals[str_user_id] = {'count': 0, 'bonus_likes': 0}
-            referrals[str_user_id]['bonus_likes'] += 1  # Daily bonus me +1 extra like limit free
+            referrals[str_user_id]['bonus_likes'] += 100  # Daily bonus me +1 extra like limit free
             save_data()
-            bot.reply_to(message, "🎉 Congratulations! Aapko aaj ka daily bonus **+1 Extra Like Limit** mil gaya hai! 🔥", parse_mode='Markdown')
+            bot.reply_to(message, "🎉 Congratulations! Aapko aaj ka daily bonus **+100 Extra Like Limit** mil gaya hai! 🔥", parse_mode='Markdown')
 
     elif text == "👥 Referral System":
         bot_username = bot.get_me().username
